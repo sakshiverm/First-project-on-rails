@@ -1,0 +1,28 @@
+<p>new Student</p>
+<%=form_with model: @student do |form| %>
+<div>
+	<%=form.label :first_name %><br>
+	<%=form.text_field :first_name %>
+</div>
+
+<div>
+<%=form.label :last_name%><br>
+<%=form.text_field :last_name %>
+</div>
+
+
+<div>
+<%=form.label :age%><br>
+<%=form.text_field :age%>
+</div>
+
+<div>
+<%=form.label :salary %><br>
+<%= form.text_field :salary%>
+</div>	
+
+
+<div>
+	<%= form.submit%>
+</div>	
+<% end %>	
